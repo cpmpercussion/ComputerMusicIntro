@@ -1,4 +1,4 @@
-#N canvas -1136 118 850 580 10;
+#N canvas 0 118 850 580 10;
 #X obj 360 510 dac~;
 #X obj 366 463 *~ 0.1;
 #X obj 73 77 metro;
@@ -71,7 +71,7 @@
 #X connect 12 0 20 0;
 #X connect 13 0 11 0;
 #X connect 14 0 12 0;
-#X connect 15 0 25 0;
+#X connect 15 0 25 1;
 #X connect 16 0 17 0;
 #X connect 17 0 15 1;
 #X connect 18 0 16 0;
@@ -81,7 +81,7 @@
 #X connect 21 0 35 0;
 #X connect 22 0 23 0;
 #X connect 23 0 9 0;
-#X connect 24 0 25 1;
+#X connect 24 0 25 0;
 #X connect 25 0 1 0;
 #X connect 26 0 24 0;
 #X connect 27 0 28 0;
