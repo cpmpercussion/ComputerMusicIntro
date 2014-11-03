@@ -1,6 +1,6 @@
-#N canvas -984 281 516 621 10;
+#N canvas 418 22 516 621 10;
 #X obj 172 399 dac~;
-#X obj 129 248 osc~ 440;
+#X obj 95 248 osc~ 440;
 #X obj 181 339 *~ 0.1;
 #X obj 201 248 vline~;
 #X obj 181 285 *~;

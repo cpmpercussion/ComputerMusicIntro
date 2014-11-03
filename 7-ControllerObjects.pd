@@ -1,4 +1,4 @@
-#N canvas -1722 107 910 342 10;
+#N canvas 103 22 910 342 10;
 #X obj 219 220 print;
 #X msg 20 163 message;
 #X obj 122 162 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -7,20 +7,20 @@
 1;
 #X floatatom 213 164 5 0 0 0 - - -;
 #X obj 262 50 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 10700 1;
+-1 -1 0 1;
 #X obj 299 167 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X floatatom 270 237 5 0 0 0 - - -;
 #X obj 453 55 vradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
--1 6;
-#N canvas -887 322 450 300 morestuff 0;
+-1 0;
+#N canvas 0 322 450 300 morestuff 0;
 #X obj 75 226 outlet;
 #X obj 239 225 outlet;
-#X obj 73 148 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 73 148 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 112 149 5 0 0 0 - - -;
 #X obj 161 35 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 5300 1;
+-1 -1 0 1;
 #X connect 2 0 0 0;
 #X connect 3 0 0 0;
 #X connect 4 0 1 0;

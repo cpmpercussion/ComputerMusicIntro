@@ -1,4 +1,4 @@
-#N canvas -1437 174 533 476 10;
+#N canvas 662 136 533 476 10;
 #X declare .;
 #X obj 212 449 dac~;
 #X obj 6 36 loadbang;
@@ -9,17 +9,17 @@
 #X coords 0 1 1.323e+06 -1 200 140 1;
 #X restore 314 39 graph;
 #X obj 177 343 tabread4~ field-table;
-#X obj 73 323 line~;
-#X obj 73 298 pack 0 100;
-#X floatatom 70 229 5 0 0 0 - - -;
-#X floatatom 125 269 10 0 0 0 - - -;
+#X obj 63 255 line~;
+#X obj 63 230 pack 0 100;
+#X floatatom 60 161 5 0 0 0 - - -;
+#X floatatom 115 201 10 0 0 0 - - -;
 #X obj 221 389 *~ 0.8;
 #X obj 128 37 declare .;
-#X obj 73 270 * 441;
+#X obj 63 202 * 441;
 #X obj 268 289 *~ 88200;
 #X obj 235 252 phasor~ 0.5;
 #X obj 213 111 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 7700 1;
+-1 -1 0 1;
 #X floatatom 235 226 5 0 0 0 - - -;
 #X obj 235 203 / 100;
 #X obj 317 251 osc~ 0.2;
