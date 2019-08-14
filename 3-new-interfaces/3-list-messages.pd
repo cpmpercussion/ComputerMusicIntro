@@ -1,0 +1,43 @@
+#N canvas 47 55 1181 636 10;
+#X obj 86 203 unpack f f f;
+#X floatatom 86 240 5 0 0 0 - - -;
+#X floatatom 155 240 5 0 0 0 - - -;
+#X floatatom 120 240 5 0 0 0 - - -;
+#X obj 101 273 noteout;
+#X msg 100 173 60 \$1 1;
+#X obj 100 35 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 2900 1;
+#X obj 285 199 unpack f f f;
+#X floatatom 285 236 5 0 0 0 - - -;
+#X floatatom 354 236 5 0 0 0 - - -;
+#X floatatom 319 236 5 0 0 0 - - -;
+#X obj 300 269 noteout;
+#X obj 285 16 vsl 15 128 0 127 0 0 empty empty note 0 -9 0 10 -262144
+-1 -1 7950 1;
+#X obj 348 17 vsl 15 128 0 127 0 0 empty empty velocity 0 -9 0 10 -262144
+-1 -1 4800 1;
+#X obj 411 16 vsl 15 128 0 16 0 0 empty empty channel 0 -9 0 10 -262144
+-1 -1 4950 1;
+#X obj 285 155 list append;
+#X obj 285 178 list append;
+#X obj 411 154 int;
+#X connect 0 0 1 0;
+#X connect 0 1 3 0;
+#X connect 0 2 2 0;
+#X connect 1 0 4 0;
+#X connect 2 0 4 2;
+#X connect 3 0 4 1;
+#X connect 5 0 0 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 7 1 10 0;
+#X connect 7 2 9 0;
+#X connect 8 0 11 0;
+#X connect 9 0 11 2;
+#X connect 10 0 11 1;
+#X connect 12 0 15 0;
+#X connect 13 0 15 1;
+#X connect 14 0 17 0;
+#X connect 15 0 16 0;
+#X connect 16 0 7 0;
+#X connect 17 0 16 1;
