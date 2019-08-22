@@ -1,0 +1,96 @@
+#N canvas 1104 213 407 625 10;
+#N canvas 0 23 532 443 synth 0;
+#X obj 87 88 r pitch;
+#X obj 86 154 mtof;
+#X obj 88 314 dac~;
+#X obj 127 174 vline~;
+#X msg 127 153 1 50 \, 0 150 50;
+#X obj 86 246 *~ 0.2;
+#X obj 86 200 fmsynth 1 1.995;
+#X obj 87 112 t b a;
+#X connect 0 0 7 0;
+#X connect 1 0 6 0;
+#X connect 3 0 6 1;
+#X connect 4 0 3 0;
+#X connect 5 0 2 0;
+#X connect 5 0 2 1;
+#X connect 6 0 5 0;
+#X connect 7 0 4 0;
+#X connect 7 1 1 0;
+#X restore 8 262 pd synth;
+#X obj 35 68 random 100;
+#X obj 35 100 moses 20;
+#X obj 15 131 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 95 131 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 35 36 metro 500;
+#X obj 35 5 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X msg 94 158 60;
+#X msg 13 157 67;
+#X floatatom 50 188 5 0 0 1 output_pitch - pitch;
+#N canvas 143 325 1172 546 more_steps 0;
+#X obj 35 68 random 100;
+#X obj 35 100 moses 20;
+#X obj 35 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 95 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 35 36 metro 500;
+#X obj 35 5 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X floatatom 180 192 5 0 0 1 output_pitch - pitch;
+#X obj 95 100 moses 30;
+#X obj 156 100 moses 45;
+#X obj 214 100 moses 70;
+#X obj 273 100 moses 95;
+#X obj 156 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 214 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 273 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 35 154 60;
+#X msg 95 154 62;
+#X msg 156 154 63;
+#X msg 214 154 65;
+#X msg 273 154 67;
+#X obj 339 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 339 153 68;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 7 0;
+#X connect 2 0 14 0;
+#X connect 3 0 15 0;
+#X connect 4 0 0 0;
+#X connect 5 0 4 0;
+#X connect 7 0 3 0;
+#X connect 7 1 8 0;
+#X connect 8 0 11 0;
+#X connect 8 1 9 0;
+#X connect 9 0 12 0;
+#X connect 9 1 10 0;
+#X connect 10 0 13 0;
+#X connect 10 1 19 0;
+#X connect 11 0 16 0;
+#X connect 12 0 17 0;
+#X connect 13 0 18 0;
+#X connect 14 0 6 0;
+#X connect 15 0 6 0;
+#X connect 16 0 6 0;
+#X connect 17 0 6 0;
+#X connect 18 0 6 0;
+#X connect 19 0 20 0;
+#X connect 20 0 6 0;
+#X restore 9 241 pd more_steps;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 3 0 8 0;
+#X connect 4 0 7 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 0;
+#X connect 7 0 9 0;
+#X connect 8 0 9 0;
