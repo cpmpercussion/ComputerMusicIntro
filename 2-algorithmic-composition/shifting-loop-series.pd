@@ -1,4 +1,4 @@
-#N canvas 30 103 564 579 10;
+#N canvas 31 99 564 579 10;
 #N canvas 0 23 450 300 infcount 0;
 #X obj 141 164 outlet;
 #X obj 118 56 inlet;
@@ -13,15 +13,15 @@
 #X connect 4 0 0 0;
 #X connect 5 0 4 1;
 #X restore 191 125 pd infcount;
-#X obj 191 105 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 191 105 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 253 71 loadbang;
 #X floatatom 191 146 12 0 0 0 - - -;
 #X obj 193 212 cos;
 #X floatatom 193 234 7 0 0 0 - - -;
 #X obj 196 255 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 8396 1;
-#N canvas 596 36 618 659 fm_pad_panner 1;
+-1 -1 0 1;
+#N canvas 596 36 618 659 fm_pad_panner 0;
 #X obj 112 308 fmsynth 1 0.1;
 #X obj 170 270 vline~;
 #X floatatom 107 229 5 0 0 0 - - -;
@@ -87,12 +87,12 @@
 #X obj 131 352 cos;
 #X floatatom 131 374 7 0 0 0 - - -;
 #X obj 134 395 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 21 1;
+-1 -1 0 1;
 #X obj 130 333 * 10;
 #X obj 153 485 cos;
 #X floatatom 153 507 7 0 0 0 - - -;
 #X obj 156 528 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 643 1;
+-1 -1 0 1;
 #X obj 152 466 * 9;
 #X msg 253 94 250;
 #X obj 239 422 + 1;
