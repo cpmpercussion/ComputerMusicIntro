@@ -109,27 +109,27 @@ up some sound for the effects.
 ## Examples: Live Patching
 
 - Synthesis:
-+ “hello world” sine tone
-+ Basic Additive sine Tones
-+ FM Synthesis
+    + hello world sine tone
+    + Basic Additive Sine Tones
+    + FM Synthesis
 - Recordings:
-+ Playing back a sound file
-+ messing with a sound file
+    + Playing back a sound file
+    + messing with a sound file
 - Control
-+ ADSR Envelope Generator
-+ Controlling multiple instruments
+    + ADSR Envelope Generator
+    + Controlling multiple instruments
 - Not-Control
-+ Random Values
-+ Markov Chains
+    + Random Values
+    + Markov Chains
 - Interaction
-+ Fiddle and Bonk
-+ Sensors
-+ New Interface
-+ MIDI / OSC
-
+    + Fiddle and Bonk
+    + Sensors
+    + New Interface
+    + MIDI / OSC
 
 ## why not Pd?
 
+- doesn't work on the web
 - visual programming sucks (write once, read never)
     - where does the program start? hard to tell.
     - make 10 synths? Sure - copy and paste.
@@ -140,7 +140,6 @@ up some sound for the effects.
 100 .do({{SinOsc.ar(Rand.new(35.0,2000.0), 0 ,[0.1,0.1], 0 )}.play;})
 ```
 
-- doesn't work on the web
 
 ## links:
 
