@@ -92,11 +92,11 @@ about](https://hdl.handle.net/2027/spo.bbp2372.2013.073). The Pd patches
 started out in an app called RjDJ that could play back specially packaged up Pd
 files, but I later created my own app just for doing these performances.
 
-![](nordligvinter-app.jpg)
+![](media/nordligvinter-app.jpg)
 
-![](nordlig-vinter-pd.png)
+![](media/nordlig-vinter-pd.png)
 
-![](nordligvinter-setup.jpg)
+![](media/nordligvinter-setup.jpg)
 
 In the Nordlig Vinter app (and all my subsequent iOS work), I used the `libpd`
 distribution of _just_ the sound engine from Pd which can be connected in with
