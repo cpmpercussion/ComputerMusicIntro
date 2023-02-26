@@ -1,0 +1,11 @@
+#N canvas 571 129 266 219 12;
+#X obj 21 83 delay 1000;
+#X obj 21 20 bng 40 250 50 0 empty empty empty 0 -10 0 12 #ff8300 #000000 #000000;
+#X obj 21 125 bng 40 250 50 0 empty empty empty 0 -10 0 12 #ff0400 #000000 #000000;
+#X obj 151 83 metro 1000;
+#X obj 151 125 bng 40 250 50 0 empty empty empty 0 -10 0 12 #00ff04 #000000 #000000;
+#X obj 151 20 tgl 40 0 empty empty empty 0 -10 0 12 #faff00 #000000 #000000 0 1;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 3 0 4 0;
+#X connect 5 0 3 0;

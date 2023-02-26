@@ -1,15 +1,14 @@
-#N canvas 259 450 532 491 10;
-#X obj 128 239 delwrite~ steven 500;
-#X obj 293 238 delread~ steven;
-#X obj 149 355 dac~;
-#X obj 153 95 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 93 139 osc~ 440;
-#X obj 153 139 vline~;
-#X obj 93 175 *~;
-#X msg 153 116 1 10 \, 0 100 10;
-#X obj 93 209 *~ 0.1;
-#X floatatom 293 192 5 0 0 0 - - -;
+#N canvas 610 112 258 265 10;
+#X obj 38 154 delwrite~ steven 500;
+#X obj 77 198 delread~ steven;
+#X obj 11 187 dac~;
+#X obj 74 10 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 14 54 osc~ 440;
+#X obj 74 54 vline~;
+#X obj 14 90 *~;
+#X msg 74 31 1 10 \, 0 100 10;
+#X obj 14 124 *~ 0.1;
+#X floatatom 78 177 5 0 0 0 - - - 0;
 #X connect 1 0 2 0;
 #X connect 1 0 2 1;
 #X connect 3 0 7 0;
