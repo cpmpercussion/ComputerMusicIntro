@@ -1,0 +1,26 @@
+#N canvas 313 410 460 409 10;
+#X obj 133 299 outlet~;
+#X obj 133 258 osc~;
+#X obj 133 235 +~;
+#X obj 148 214 *~;
+#X obj 148 192 osc~;
+#X obj 133 279 *~;
+#X obj 247 245 inlet~;
+#X obj 56 66 inlet;
+#X floatatom 56 87 5 0 0 0 - - -;
+#X obj 146 117 *~ \$1;
+#X obj 188 212 *~ \$2;
+#X text 34 333 simpe fmsynth \, the 1st arg is the harmonicity ratio
+and the second is the modulation index.;
+#X connect 1 0 5 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 1;
+#X connect 4 0 3 0;
+#X connect 5 0 0 0;
+#X connect 6 0 5 1;
+#X connect 7 0 8 0;
+#X connect 8 0 2 0;
+#X connect 8 0 9 0;
+#X connect 9 0 4 0;
+#X connect 9 0 10 0;
+#X connect 10 0 3 1;
