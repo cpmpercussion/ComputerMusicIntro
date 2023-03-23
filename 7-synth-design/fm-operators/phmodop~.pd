@@ -1,4 +1,4 @@
-#N canvas 156 388 437 293 12;
+#N canvas 156 388 397 291 12;
 #X obj 39 150 phasor~;
 #X obj 39 95 inlet~;
 #X obj 99 96 inlet~;
@@ -6,7 +6,7 @@
 #X obj 39 198 cos~;
 #X obj 39 222 *~;
 #X obj 39 246 outlet~;
-#X text 37 33 inlets:;
+#X text 37 18 inlets:;
 #X obj 164 119 sig~;
 #X obj 39 122 *~;
 #N canvas 345 120 515 487 adsr 0;
@@ -70,8 +70,8 @@
 #X obj 164 95 inlet;
 #X obj 212 94 inlet;
 #X obj 261 94 inlet;
-#X text 35 56 frequency \, phase \, freq-scale \, velocity \, env-params;
-#X text 148 208 env-params format is: peak-level A D S R;
+#X text 35 41 frequency \, phase \, freq-scale \, velocity \, env-params;
+#X text 38 59 env-params format is: peak-level A D S R;
 #X connect 0 0 3 0;
 #X connect 1 0 9 0;
 #X connect 2 0 3 1;
