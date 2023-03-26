@@ -1,81 +1,63 @@
-#N canvas 463 281 1068 364 10;
-#X obj 42 192 random 100;
-#X obj 42 251 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 102 251 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 353 17 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X floatatom 444 61 5 0 0 1 output_pitch - pitch;
-#X obj 163 251 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 221 251 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 42 278 60;
-#X obj 126 311 s state;
-#X msg 102 278 63;
-#X msg 163 278 67;
-#X msg 220 278 68;
-#X obj 294 191 random 100;
-#X obj 294 250 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 354 250 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 415 250 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 473 250 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 294 277 60;
-#X obj 378 310 s state;
-#X msg 354 277 63;
-#X msg 415 277 67;
-#X msg 472 277 68;
-#X obj 542 190 random 100;
-#X obj 542 222 moses 20;
-#X obj 542 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 602 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 602 222 moses 30;
-#X obj 663 222 moses 45;
-#X obj 663 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 721 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 542 276 60;
-#X obj 626 309 s state;
-#X msg 602 276 63;
-#X msg 663 276 67;
-#X msg 720 276 68;
-#X obj 780 190 random 100;
-#X obj 780 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 840 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 901 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 959 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 780 276 60;
-#X obj 864 309 s state;
-#X msg 840 276 63;
-#X msg 901 276 67;
-#X msg 958 276 68;
-#X obj 405 126 sel 60 63 67 68;
-#X obj 404 101 f 60;
-#X obj 353 57 bng 30 250 50 0 empty empty step! 32 7 0 10 -261234 -1
--1;
-#X obj 42 224 moses 5;
-#X obj 102 224 moses 75;
-#X obj 163 224 moses 90;
-#X obj 294 223 moses 5;
-#X obj 354 223 moses 30;
-#X obj 415 223 moses 85;
-#X obj 780 222 moses 50;
-#X obj 840 222 moses 65;
-#X obj 902 221 moses 70;
-#X obj 424 36 r state;
-#X obj 353 37 metro 500;
+#N canvas -1538 185 958 333 10;
+#X obj 8 181 random 100;
+#X obj 8 240 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 68 240 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 222 33 tgl 50 0 start empty start! 0 -10 0 16 #c6ffc7 #202020 #000000 0 1;
+#X floatatom 410 50 5 0 0 1 output_pitch - pitch 0;
+#X obj 129 240 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 187 240 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X msg 8 267 60;
+#X obj 92 300 s state;
+#X msg 68 267 63;
+#X msg 129 267 67;
+#X msg 186 267 68;
+#X obj 260 180 random 100;
+#X obj 260 239 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 320 239 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 381 239 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 439 239 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X msg 260 266 60;
+#X obj 344 299 s state;
+#X msg 320 266 63;
+#X msg 381 266 67;
+#X msg 438 266 68;
+#X obj 508 179 random 100;
+#X obj 508 211 moses 20;
+#X obj 508 238 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 568 238 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 568 211 moses 30;
+#X obj 629 211 moses 45;
+#X obj 629 238 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 687 238 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X msg 508 265 60;
+#X obj 592 298 s state;
+#X msg 568 265 63;
+#X msg 629 265 67;
+#X msg 686 265 68;
+#X obj 746 179 random 100;
+#X obj 746 238 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 806 238 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 867 238 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 925 238 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X msg 746 265 60;
+#X obj 830 298 s state;
+#X msg 806 265 63;
+#X msg 867 265 67;
+#X msg 924 265 68;
+#X obj 371 115 sel 60 63 67 68;
+#X obj 370 90 f 60;
+#X obj 319 46 bng 30 250 50 0 empty empty step! 32 7 0 10 #fcc4c4 #000000 #000000;
+#X obj 8 213 moses 5;
+#X obj 68 213 moses 75;
+#X obj 129 213 moses 90;
+#X obj 260 212 moses 5;
+#X obj 320 212 moses 30;
+#X obj 381 212 moses 85;
+#X obj 746 211 moses 50;
+#X obj 806 211 moses 65;
+#X obj 868 210 moses 70;
+#X obj 390 25 r state;
+#X obj 319 26 metro 500;
 #N canvas 0 23 532 443 synth 0;
 #X obj 87 88 r pitch;
 #X obj 86 154 mtof;
@@ -94,19 +76,15 @@
 #X connect 6 0 5 0;
 #X connect 7 0 4 0;
 #X connect 7 1 1 0;
-#X restore 907 28 pd synth;
-#X obj 42 159 bng 30 250 50 0 empty empty empty 17 7 0 10 -261682 -1
--1;
-#X obj 294 158 bng 30 250 50 0 empty empty empty 17 7 0 10 -262130
--1 -1;
-#X obj 542 156 bng 30 250 50 0 empty empty empty 17 7 0 10 -204786
--1 -1;
-#X obj 780 155 bng 30 250 50 0 empty empty empty 17 7 0 10 -204800
--1 -1;
+#X restore 532 13 pd synth;
+#X obj 8 148 bng 30 250 50 0 empty empty empty 17 7 0 10 #fce0c4 #000000 #000000;
+#X obj 260 147 bng 30 250 50 0 empty empty empty 17 7 0 10 #fcfcc4 #000000 #000000;
+#X obj 508 145 bng 30 250 50 0 empty empty empty 17 7 0 10 #c4fcc4 #000000 #000000;
+#X obj 746 144 bng 30 250 50 0 empty empty empty 17 7 0 10 #c4fcfc #000000 #000000;
+#X obj 319 6 r start;
 #X connect 0 0 48 0;
 #X connect 1 0 7 0;
 #X connect 2 0 9 0;
-#X connect 3 0 58 0;
 #X connect 5 0 10 0;
 #X connect 6 0 11 0;
 #X connect 7 0 8 0;
@@ -177,3 +155,4 @@
 #X connect 61 0 12 0;
 #X connect 62 0 22 0;
 #X connect 63 0 35 0;
+#X connect 64 0 58 0;
