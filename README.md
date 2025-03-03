@@ -1,4 +1,4 @@
-Introduction to Computer Music
+Introduction to Computer Music with Pure Data
 ==================
 
 ![Intro to Computer Music title image](media/intro-computermusic.png)
