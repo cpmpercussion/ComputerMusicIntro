@@ -1,0 +1,15 @@
+#N canvas 538 230 237 203 10;
+#X obj 18 155 dac~;
+#X floatatom 76 29 5 0 0 0 - - - 0;
+#X obj 20 104 *~ 0.5;
+#X obj 20 26 noise~;
+#X obj 20 56 bp~ 100 100;
+#X obj 130 27 vsl 30 136 0 127 0 0 empty empty filter\ note 0 -9 0 10 #ff8300 #000000 #000000 0 1;
+#X obj 130 171 mtof;
+#X connect 1 0 4 1;
+#X connect 2 0 0 1;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 1 0;
