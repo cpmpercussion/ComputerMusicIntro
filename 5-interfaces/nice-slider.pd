@@ -1,0 +1,4 @@
+#N canvas 248 345 441 573 12;
+#X obj 2 29 vsl 19 200 0 127 0 0 empty empty empty 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 32 29 vu 19 200 empty empty -1 -10 0 12 #404040 #000000 1 0;
+#X coords 0 -1 1 1 85 240 1 0 0;
